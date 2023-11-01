@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD5B1268299EC1AB00A64DC8 /* iCaloriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5B1267299EC1AB00A64DC8 /* iCaloriesApp.swift */; };
+		FD5B126A299EC1AB00A64DC8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5B1269299EC1AB00A64DC8 /* ContentView.swift */; };
+		FD5B126C299EC1AD00A64DC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD5B126B299EC1AD00A64DC8 /* Assets.xcassets */; };
+		FD5B126F299EC1AD00A64DC8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD5B126E299EC1AD00A64DC8 /* Preview Assets.xcassets */; };
+		FD5B1279299EC1AD00A64DC8 /* iCaloriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5B1278299EC1AD00A64DC8 /* iCaloriesTests.swift */; };
+		FD5B1283299EC1AD00A64DC8 /* iCaloriesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5B1282299EC1AD00A64DC8 /* iCaloriesUITests.swift */; };
+		FD5B1285299EC1AD00A64DC8 /* iCaloriesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5B1284299EC1AD00A64DC8 /* iCaloriesUITestsLaunchTests.swift */; };
+		FD5B1294299EC21800A64DC8 /* FoodModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD5B1292299EC21800A64DC8 /* FoodModel.xcdatamodeld */; };
+		FD5B1296299EC32A00A64DC8 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5B1295299EC32A00A64DC8 /* DataController.swift */; };
+		FD5B129A299EEB6100A64DC8 /* AddFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5B1299299EEB6100A64DC8 /* AddFoodView.swift */; };
+		FD5B129C299F39D900A64DC8 /* TimeFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5B129B299F39D900A64DC8 /* TimeFormatting.swift */; };
+		FD95470929B123CD00A80FE2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD95470829B123CD00A80FE2 /* GoogleService-Info.plist */; };
+		FD95470C29B1247400A80FE2 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = FD95470B29B1247400A80FE2 /* FirebaseAnalytics */; };
+		FD95470E29B1247400A80FE2 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FD95470D29B1247400A80FE2 /* FirebaseAuth */; };
+		FD95471029B1247400A80FE2 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = FD95470F29B1247400A80FE2 /* FirebaseCrashlytics */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD5B1275299EC1AD00A64DC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD5B125C299EC1AB00A64DC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD5B1263299EC1AB00A64DC8;
+			remoteInfo = iCalories;
+		};
+		FD5B127F299EC1AD00A64DC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD5B125C299EC1AB00A64DC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD5B1263299EC1AB00A64DC8;
+			remoteInfo = iCalories;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD5B1264299EC1AB00A64DC8 /* iCalories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCalories.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD5B1267299EC1AB00A64DC8 /* iCaloriesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCaloriesApp.swift; sourceTree = "<group>"; };
+		FD5B1269299EC1AB00A64DC8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FD5B126B299EC1AD00A64DC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD5B126E299EC1AD00A64DC8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD5B1274299EC1AD00A64DC8 /* iCaloriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iCaloriesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD5B1278299EC1AD00A64DC8 /* iCaloriesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCaloriesTests.swift; sourceTree = "<group>"; };
+		FD5B127E299EC1AD00A64DC8 /* iCaloriesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iCaloriesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD5B1282299EC1AD00A64DC8 /* iCaloriesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCaloriesUITests.swift; sourceTree = "<group>"; };
+		FD5B1284299EC1AD00A64DC8 /* iCaloriesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCaloriesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FD5B1293299EC21800A64DC8 /* FoodModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodModel.xcdatamodel; sourceTree = "<group>"; };
+		FD5B1295299EC32A00A64DC8 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		FD5B1299299EEB6100A64DC8 /* AddFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodView.swift; sourceTree = "<group>"; };
+		FD5B129B299F39D900A64DC8 /* TimeFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatting.swift; sourceTree = "<group>"; };
+		FD95470829B123CD00A80FE2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD5B1261299EC1AB00A64DC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD95471029B1247400A80FE2 /* FirebaseCrashlytics in Frameworks */,
+				FD95470C29B1247400A80FE2 /* FirebaseAnalytics in Frameworks */,
+				FD95470E29B1247400A80FE2 /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5B1271299EC1AD00A64DC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5B127B299EC1AD00A64DC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD5B125B299EC1AB00A64DC8 = {
+			isa = PBXGroup;
+			children = (
+				FD5B1266299EC1AB00A64DC8 /* iCalories */,
+				FD5B1277299EC1AD00A64DC8 /* iCaloriesTests */,
+				FD5B1281299EC1AD00A64DC8 /* iCaloriesUITests */,
+				FD5B1265299EC1AB00A64DC8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD5B1265299EC1AB00A64DC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD5B1264299EC1AB00A64DC8 /* iCalories.app */,
+				FD5B1274299EC1AD00A64DC8 /* iCaloriesTests.xctest */,
+				FD5B127E299EC1AD00A64DC8 /* iCaloriesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD5B1266299EC1AB00A64DC8 /* iCalories */ = {
+			isa = PBXGroup;
+			children = (
+				FD5B1267299EC1AB00A64DC8 /* iCaloriesApp.swift */,
+				FD95470829B123CD00A80FE2 /* GoogleService-Info.plist */,
+				FD5B1298299EEB3A00A64DC8 /* Helpers */,
+				FD5B1297299EEA7400A64DC8 /* Views */,
+				FD5B1291299EC1BC00A64DC8 /* DataModel */,
+				FD5B126B299EC1AD00A64DC8 /* Assets.xcassets */,
+				FD5B126D299EC1AD00A64DC8 /* Preview Content */,
+			);
+			path = iCalories;
+			sourceTree = "<group>";
+		};
+		FD5B126D299EC1AD00A64DC8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FD5B126E299EC1AD00A64DC8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FD5B1277299EC1AD00A64DC8 /* iCaloriesTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD5B1278299EC1AD00A64DC8 /* iCaloriesTests.swift */,
+			);
+			path = iCaloriesTests;
+			sourceTree = "<group>";
+		};
+		FD5B1281299EC1AD00A64DC8 /* iCaloriesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD5B1282299EC1AD00A64DC8 /* iCaloriesUITests.swift */,
+				FD5B1284299EC1AD00A64DC8 /* iCaloriesUITestsLaunchTests.swift */,
+			);
+			path = iCaloriesUITests;
+			sourceTree = "<group>";
+		};
+		FD5B1291299EC1BC00A64DC8 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				FD5B1292299EC21800A64DC8 /* FoodModel.xcdatamodeld */,
+				FD5B1295299EC32A00A64DC8 /* DataController.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		FD5B1297299EEA7400A64DC8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FD5B1269299EC1AB00A64DC8 /* ContentView.swift */,
+				FD5B1299299EEB6100A64DC8 /* AddFoodView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FD5B1298299EEB3A00A64DC8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FD5B129B299F39D900A64DC8 /* TimeFormatting.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD5B1263299EC1AB00A64DC8 /* iCalories */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD5B1288299EC1AD00A64DC8 /* Build configuration list for PBXNativeTarget "iCalories" */;
+			buildPhases = (
+				FD5B1260299EC1AB00A64DC8 /* Sources */,
+				FD5B1261299EC1AB00A64DC8 /* Frameworks */,
+				FD5B1262299EC1AB00A64DC8 /* Resources */,
+				FD95471129B12CE000A80FE2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iCalories;
+			packageProductDependencies = (
+				FD95470B29B1247400A80FE2 /* FirebaseAnalytics */,
+				FD95470D29B1247400A80FE2 /* FirebaseAuth */,
+				FD95470F29B1247400A80FE2 /* FirebaseCrashlytics */,
+			);
+			productName = iCalories;
+			productReference = FD5B1264299EC1AB00A64DC8 /* iCalories.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD5B1273299EC1AD00A64DC8 /* iCaloriesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD5B128B299EC1AD00A64DC8 /* Build configuration list for PBXNativeTarget "iCaloriesTests" */;
+			buildPhases = (
+				FD5B1270299EC1AD00A64DC8 /* Sources */,
+				FD5B1271299EC1AD00A64DC8 /* Frameworks */,
+				FD5B1272299EC1AD00A64DC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD5B1276299EC1AD00A64DC8 /* PBXTargetDependency */,
+			);
+			name = iCaloriesTests;
+			productName = iCaloriesTests;
+			productReference = FD5B1274299EC1AD00A64DC8 /* iCaloriesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD5B127D299EC1AD00A64DC8 /* iCaloriesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD5B128E299EC1AD00A64DC8 /* Build configuration list for PBXNativeTarget "iCaloriesUITests" */;
+			buildPhases = (
+				FD5B127A299EC1AD00A64DC8 /* Sources */,
+				FD5B127B299EC1AD00A64DC8 /* Frameworks */,
+				FD5B127C299EC1AD00A64DC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD5B1280299EC1AD00A64DC8 /* PBXTargetDependency */,
+			);
+			name = iCaloriesUITests;
+			productName = iCaloriesUITests;
+			productReference = FD5B127E299EC1AD00A64DC8 /* iCaloriesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD5B125C299EC1AB00A64DC8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					FD5B1263299EC1AB00A64DC8 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					FD5B1273299EC1AD00A64DC8 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FD5B1263299EC1AB00A64DC8;
+					};
+					FD5B127D299EC1AD00A64DC8 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FD5B1263299EC1AB00A64DC8;
+					};
+				};
+			};
+			buildConfigurationList = FD5B125F299EC1AB00A64DC8 /* Build configuration list for PBXProject "iCalories" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD5B125B299EC1AB00A64DC8;
+			packageReferences = (
+				FD95470A29B1247400A80FE2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = FD5B1265299EC1AB00A64DC8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD5B1263299EC1AB00A64DC8 /* iCalories */,
+				FD5B1273299EC1AD00A64DC8 /* iCaloriesTests */,
+				FD5B127D299EC1AD00A64DC8 /* iCaloriesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD5B1262299EC1AB00A64DC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD5B126F299EC1AD00A64DC8 /* Preview Assets.xcassets in Resources */,
+				FD95470929B123CD00A80FE2 /* GoogleService-Info.plist in Resources */,
+				FD5B126C299EC1AD00A64DC8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5B1272299EC1AD00A64DC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5B127C299EC1AD00A64DC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FD95471129B12CE000A80FE2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD5B1260299EC1AB00A64DC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD5B129A299EEB6100A64DC8 /* AddFoodView.swift in Sources */,
+				FD5B126A299EC1AB00A64DC8 /* ContentView.swift in Sources */,
+				FD5B1296299EC32A00A64DC8 /* DataController.swift in Sources */,
+				FD5B1268299EC1AB00A64DC8 /* iCaloriesApp.swift in Sources */,
+				FD5B1294299EC21800A64DC8 /* FoodModel.xcdatamodeld in Sources */,
+				FD5B129C299F39D900A64DC8 /* TimeFormatting.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5B1270299EC1AD00A64DC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD5B1279299EC1AD00A64DC8 /* iCaloriesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5B127A299EC1AD00A64DC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD5B1285299EC1AD00A64DC8 /* iCaloriesUITestsLaunchTests.swift in Sources */,
+				FD5B1283299EC1AD00A64DC8 /* iCaloriesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD5B1276299EC1AD00A64DC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD5B1263299EC1AB00A64DC8 /* iCalories */;
+			targetProxy = FD5B1275299EC1AD00A64DC8 /* PBXContainerItemProxy */;
+		};
+		FD5B1280299EC1AD00A64DC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD5B1263299EC1AB00A64DC8 /* iCalories */;
+			targetProxy = FD5B127F299EC1AD00A64DC8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FD5B1286299EC1AD00A64DC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD5B1287299EC1AD00A64DC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD5B1289299EC1AD00A64DC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iCalories/Preview Content\"";
+				DEVELOPMENT_TEAM = 8F2485T5AY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = code.with.hanh.iCalories;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD5B128A299EC1AD00A64DC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iCalories/Preview Content\"";
+				DEVELOPMENT_TEAM = 8F2485T5AY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = code.with.hanh.iCalories;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FD5B128C299EC1AD00A64DC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8F2485T5AY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = code.with.hanh.iCaloriesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iCalories.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iCalories";
+			};
+			name = Debug;
+		};
+		FD5B128D299EC1AD00A64DC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8F2485T5AY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = code.with.hanh.iCaloriesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iCalories.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iCalories";
+			};
+			name = Release;
+		};
+		FD5B128F299EC1AD00A64DC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8F2485T5AY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = code.with.hanh.iCaloriesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iCalories;
+			};
+			name = Debug;
+		};
+		FD5B1290299EC1AD00A64DC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8F2485T5AY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = code.with.hanh.iCaloriesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iCalories;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD5B125F299EC1AB00A64DC8 /* Build configuration list for PBXProject "iCalories" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD5B1286299EC1AD00A64DC8 /* Debug */,
+				FD5B1287299EC1AD00A64DC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD5B1288299EC1AD00A64DC8 /* Build configuration list for PBXNativeTarget "iCalories" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD5B1289299EC1AD00A64DC8 /* Debug */,
+				FD5B128A299EC1AD00A64DC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD5B128B299EC1AD00A64DC8 /* Build configuration list for PBXNativeTarget "iCaloriesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD5B128C299EC1AD00A64DC8 /* Debug */,
+				FD5B128D299EC1AD00A64DC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD5B128E299EC1AD00A64DC8 /* Build configuration list for PBXNativeTarget "iCaloriesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD5B128F299EC1AD00A64DC8 /* Debug */,
+				FD5B1290299EC1AD00A64DC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FD95470A29B1247400A80FE2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FD95470B29B1247400A80FE2 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD95470A29B1247400A80FE2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		FD95470D29B1247400A80FE2 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD95470A29B1247400A80FE2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		FD95470F29B1247400A80FE2 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD95470A29B1247400A80FE2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		FD5B1292299EC21800A64DC8 /* FoodModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FD5B1293299EC21800A64DC8 /* FoodModel.xcdatamodel */,
+			);
+			currentVersion = FD5B1293299EC21800A64DC8 /* FoodModel.xcdatamodel */;
+			path = FoodModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FD5B125C299EC1AB00A64DC8 /* Project object */;
+}
